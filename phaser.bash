@@ -13,6 +13,20 @@ build() {
   fi
   docker build . \
   --build-arg NODE_ENV=$NODE_ENV \
+  --compress \
   --force-rm \
+  --rm \
   -t chrisdlangton/phaser3-sandpit
 }
+
+push() {
+  VERSION=$1
+  if [ -z $VERSION ]; then
+    VERSION=latest
+  fi
+  # docker rmi chrisdlangton/docker-phaser:3.3.0
+  # docker build . -t chrisdlangton/docker-phaser:3.3
+  # docker tag chrisdlangton/docker-phaser chrisdlangton/docker-phaser:3.3
+  # docker push chrisdlangton/docker-phaser
+}
+
