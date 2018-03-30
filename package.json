@@ -1,0 +1,25 @@
+{
+  "name": "phaser3-sandpit",
+  "version": "1.0.0",
+  "description": "learning phaser3",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "echo \"Error: no runner specified\" && exit 1"
+  },
+  "dependencies": {
+    "phaser": "^3.3"
+  },
+  "devDependencies": {
+    "es6-module-transpiler": "^0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdlangton/phaser3-sandpit.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/chrisdlangton/phaser3-sandpit/issues"
+  },
+  "homepage": "https://github.com/chrisdlangton/phaser3-sandpit#readme"
+}
