@@ -1,0 +1,10 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+        {
+            "match": "\\.js$",
+            "cmd": "source ${workspaceRoot}/.env; docker exec ${PROJECT_NAME} npm run build"
+        }
+    ]
+}
+}

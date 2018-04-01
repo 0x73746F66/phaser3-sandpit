@@ -4,13 +4,11 @@
   "description": "learning phaser3",
   "main": "src/index.js",
   "scripts": {
-    "start": "echo \"Error: no runner specified\" && exit 1"
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server --port=3000"
   },
   "dependencies": {
     "phaser": "^3.3"
-  },
-  "devDependencies": {
-    "es6-module-transpiler": "^0.10"
   },
   "repository": {
     "type": "git",
@@ -21,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/chrisdlangton/phaser3-sandpit/issues"
   },
-  "homepage": "https://github.com/chrisdlangton/phaser3-sandpit#readme"
+  "homepage": "https://github.com/chrisdlangton/phaser3-sandpit#readme",
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.11.2"
+  }
 }
