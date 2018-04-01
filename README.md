@@ -2,10 +2,6 @@
 
 Install docekr and obtaint he nodejs runtime;
 
-```bash
-docker pull node:9.10
-```
-
 Build image
 
 ```bash
@@ -15,7 +11,7 @@ docker build . -t chrisdlangton/phaser3-sandpit
 Access a shell in docker
 
 ```bash
-docker run -it chrisdlangton/phaser3-sandpit /bin/sh
+docker run -it chrisdlangton/phaser3-sandpit /bin/bash
 ```
 
 Helper functions for phaser docker
@@ -27,23 +23,25 @@ source phaser.bash
 Run phaser helper (drops to nodejs shell in docker)
 
 ```bash
-build; phaser
+phaser-build; phaser-start
 ```
 
 Build for prod
 
 ```bash
-build production
+phaser-build production
 ```
 
 Run a shell in docker
 
 ```bash
-phaser sh
+phaser-exec bash
 ```
 
 Run the project
 
 ```bash
-phaser npm run
+phaser-exec npm run build
 ```
+
+visit [http://localhost:3000/](http://localhost:3000/)

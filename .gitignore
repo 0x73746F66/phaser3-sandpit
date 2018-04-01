@@ -57,4 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# IDE
+.idea
+
 .bash_history_docker
